@@ -2,20 +2,17 @@
 Library    SeleniumLibrary
 Library    OperatingSystem    # เพิ่มเพื่อใช้จัดการไฟล์ YAML
 Resource   ./keywords/CommonKeywords.robot
+Variables   ./resources/config/config.yaml
+Variables   ./resources/testdata/testdata.yaml    
 Suite Setup    Open Browser    ${baseurl}    chrome
 Suite Teardown    Close Browser
-
-*** Variables ***
-${baseurl}       https://futureskill.co/
-${email}   padcenter@prachakij.com
-${valid_password}     123456
 
 *** Test Cases ***
 As a user, I want to login success with valid credentials
     [Documentation]    ทดสอบการล็อกอินด้วยข้อมูลที่ถูกต้อง
     Setup With Initial Login Button    # <- เพิ่มขั้นตอนนี้
     Input Username    ${email}
-    Input Password    ${valid_password}
+    Input Password    ${valid_password} # <- ไม่ให้ pass จริงนะครับ เดะหลุด
     Click Login Button
     Verify Login Success
 
