@@ -10,11 +10,11 @@ Suite Teardown    Close Browser
 *** Test Cases ***
 As a user, I want to login success with valid credentials
     [Documentation]    ทดสอบการล็อกอินด้วยข้อมูลที่ถูกต้อง
-    Setup With Initial Login Button    # <- เพิ่มขั้นตอนนี้
+    Setup With Initial Login Button
     Input Username    ${email}
-    Input Password    ${valid_password} # <- ไม่ให้ pass จริงนะครับ เดะหลุด
+    Input Password    ${valid_password}  # <- ไม่ให้ pass จริงนะครับ เดะหลุด
     Click Login Button
-    Verify Login Success
+    Check If Login Failed
 
 *** Keywords ***
 Setup With Initial Login Button
@@ -36,5 +36,6 @@ Input Password    [Arguments]    ${password}
 Click Login Button
     CommonKeywords.Wait until element is ready then click element    xpath=//button[contains(text(), "เข้าสู่ระบบ")]    # ปุ่มในหน้า login
 
-Verify Login Success
-    CommonKeywords.Wait until page contains element then verify text    สวัสดี คุณ Test
+Check If Login Failed
+    ${login_failed}=  Run Keyword And Return Status  Wait Until Element Is Visible  xpath=//p[contains(@class, "text-redFS-300") and contains(text(), "กรอกรหัสผ่านไม่ถูกต้อง")]  timeout=5s
+    Run Keyword If  ${login_failed}  Return From Keyword

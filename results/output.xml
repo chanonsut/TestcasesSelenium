@@ -1,76 +1,76 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.2.2 (Python 3.12.0 on darwin)" generated="2025-02-26T16:33:20.925999" rpa="false" schemaversion="5">
+<robot generator="Robot 7.2.2 (Python 3.12.0 on darwin)" generated="2025-02-26T16:50:40.234983" rpa="false" schemaversion="5">
 <suite id="s1" name="LoginTestcase" source="/Users/chanon_suttana/Documents/GitHub/TestcasesSelenium/LoginTestcase.robot">
 <kw name="Open Browser" owner="SeleniumLibrary" type="SETUP">
-<msg time="2025-02-26T16:33:21.119089" level="INFO">Opening browser 'chrome' to base url 'https://futureskill.co/'.</msg>
+<msg time="2025-02-26T16:50:40.392654" level="INFO">Opening browser 'chrome' to base url 'https://futureskill.co/'.</msg>
 <arg>${baseurl}</arg>
 <arg>chrome</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<status status="PASS" start="2025-02-26T16:33:21.118789" elapsed="3.160368"/>
+<status status="PASS" start="2025-02-26T16:50:40.392361" elapsed="2.059432"/>
 </kw>
 <test id="s1-t1" name="As a user, I want to login success with valid credentials" line="11">
 <kw name="Setup With Initial Login Button">
 <kw name="Log To Console" owner="BuiltIn">
 <arg>ปุ่มเมนูมองเห็นแล้ว</arg>
 <doc>Logs the given message to the console.</doc>
-<status status="PASS" start="2025-02-26T16:33:24.285128" elapsed="0.000425"/>
+<status status="PASS" start="2025-02-26T16:50:42.455960" elapsed="0.000600"/>
 </kw>
 <kw name="Wait until element is ready then click element" owner="CommonKeywords">
 <kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
 <arg>${locator}</arg>
 <arg>timeout=10s</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" start="2025-02-26T16:33:24.287048" elapsed="1.570176"/>
+<status status="PASS" start="2025-02-26T16:50:42.457484" elapsed="1.435124"/>
 </kw>
 <kw name="Wait Until Element Is Enabled" owner="SeleniumLibrary">
 <arg>${locator}</arg>
 <arg>timeout=5s</arg>
 <doc>Waits until the element ``locator`` is enabled.</doc>
-<status status="PASS" start="2025-02-26T16:33:25.857551" elapsed="0.085268"/>
+<status status="PASS" start="2025-02-26T16:50:43.893006" elapsed="0.109849"/>
 </kw>
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2025-02-26T16:33:25.943387" level="INFO">Clicking element 'xpath=//button[@id="react-burger-menu-btn"]'.</msg>
+<msg time="2025-02-26T16:50:44.003377" level="INFO">Clicking element 'xpath=//button[@id="react-burger-menu-btn"]'.</msg>
 <arg>${locator}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2025-02-26T16:33:25.943073" elapsed="0.176656"/>
+<status status="PASS" start="2025-02-26T16:50:44.003055" elapsed="0.148237"/>
 </kw>
 <arg>xpath=//button[@id="react-burger-menu-btn"]</arg>
-<status status="PASS" start="2025-02-26T16:33:24.286013" elapsed="1.834174"/>
+<status status="PASS" start="2025-02-26T16:50:42.457013" elapsed="1.694583"/>
 </kw>
 <kw name="Log To Console" owner="BuiltIn">
 <arg>กดปุ่มเมนูเรียบร้อย</arg>
 <doc>Logs the given message to the console.</doc>
-<status status="PASS" start="2025-02-26T16:33:26.120607" elapsed="0.000579"/>
+<status status="PASS" start="2025-02-26T16:50:44.151992" elapsed="0.000527"/>
 </kw>
 <kw name="Wait until element is ready then click element" owner="CommonKeywords">
 <kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
 <arg>${locator}</arg>
 <arg>timeout=10s</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" start="2025-02-26T16:33:26.121953" elapsed="0.252912"/>
+<status status="PASS" start="2025-02-26T16:50:44.154169" elapsed="0.273870"/>
 </kw>
 <kw name="Wait Until Element Is Enabled" owner="SeleniumLibrary">
 <arg>${locator}</arg>
 <arg>timeout=5s</arg>
 <doc>Waits until the element ``locator`` is enabled.</doc>
-<status status="PASS" start="2025-02-26T16:33:26.375112" elapsed="0.024922"/>
+<status status="PASS" start="2025-02-26T16:50:44.428253" elapsed="0.022750"/>
 </kw>
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2025-02-26T16:33:26.400475" level="INFO">Clicking element 'xpath=//button[contains(@class, "w-fit") and contains(text(), "เข้าสู่ระบบ")]'.</msg>
+<msg time="2025-02-26T16:50:44.451500" level="INFO">Clicking element 'xpath=//button[contains(@class, "w-fit") and contains(text(), "เข้าสู่ระบบ")]'.</msg>
 <arg>${locator}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2025-02-26T16:33:26.400231" elapsed="0.625036"/>
+<status status="PASS" start="2025-02-26T16:50:44.451221" elapsed="0.649143"/>
 </kw>
 <arg>xpath=//button[contains(@class, "w-fit") and contains(text(), "เข้าสู่ระบบ")]</arg>
-<status status="PASS" start="2025-02-26T16:33:26.121573" elapsed="0.903909"/>
+<status status="PASS" start="2025-02-26T16:50:44.153264" elapsed="0.947390"/>
 </kw>
 <kw name="Wait Until Page Contains" owner="SeleniumLibrary">
 <arg>เข้าสู่ระบบ</arg>
 <arg>timeout=10s</arg>
 <doc>Waits until ``text`` appears on the current page.</doc>
-<status status="PASS" start="2025-02-26T16:33:27.025746" elapsed="0.129932"/>
+<status status="PASS" start="2025-02-26T16:50:45.101033" elapsed="0.111038"/>
 </kw>
-<status status="PASS" start="2025-02-26T16:33:24.284285" elapsed="2.871782"/>
+<status status="PASS" start="2025-02-26T16:50:42.455188" elapsed="2.757103"/>
 </kw>
 <kw name="Input Username">
 <kw name="Wait until element is ready then click element" owner="CommonKeywords">
@@ -78,32 +78,32 @@
 <arg>${locator}</arg>
 <arg>timeout=10s</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" start="2025-02-26T16:33:27.160187" elapsed="0.184831"/>
+<status status="PASS" start="2025-02-26T16:50:45.214079" elapsed="0.201475"/>
 </kw>
 <kw name="Wait Until Element Is Enabled" owner="SeleniumLibrary">
 <arg>${locator}</arg>
 <arg>timeout=5s</arg>
 <doc>Waits until the element ``locator`` is enabled.</doc>
-<status status="PASS" start="2025-02-26T16:33:27.345200" elapsed="0.018570"/>
+<status status="PASS" start="2025-02-26T16:50:45.415745" elapsed="0.014664"/>
 </kw>
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2025-02-26T16:33:27.364342" level="INFO">Clicking element 'xpath=//input[@name="email"]'.</msg>
+<msg time="2025-02-26T16:50:45.430857" level="INFO">Clicking element 'xpath=//input[@name="email"]'.</msg>
 <arg>${locator}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2025-02-26T16:33:27.364042" elapsed="0.138061"/>
+<status status="PASS" start="2025-02-26T16:50:45.430611" elapsed="0.137920"/>
 </kw>
 <arg>xpath=//input[@name="email"]</arg>
-<status status="PASS" start="2025-02-26T16:33:27.159067" elapsed="0.343169"/>
+<status status="PASS" start="2025-02-26T16:50:45.213243" elapsed="0.355421"/>
 </kw>
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2025-02-26T16:33:27.502815" level="INFO">Typing text 'padcenter@prachakij.com' into text field 'xpath=//input[@name="email"]'.</msg>
+<msg time="2025-02-26T16:50:45.569544" level="INFO">Typing text 'padcenter@prachakij.com' into text field 'xpath=//input[@name="email"]'.</msg>
 <arg>xpath=//input[@name="email"]</arg>
 <arg>${username}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2025-02-26T16:33:27.502474" elapsed="0.278649"/>
+<status status="PASS" start="2025-02-26T16:50:45.568862" elapsed="0.180211"/>
 </kw>
 <arg>${email}</arg>
-<status status="PASS" start="2025-02-26T16:33:27.157680" elapsed="0.623648"/>
+<status status="PASS" start="2025-02-26T16:50:45.212798" elapsed="0.536423"/>
 </kw>
 <kw name="Input Password">
 <kw name="Wait until element is ready then click element" owner="CommonKeywords">
@@ -111,32 +111,32 @@
 <arg>${locator}</arg>
 <arg>timeout=10s</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" start="2025-02-26T16:33:27.782865" elapsed="0.020935"/>
+<status status="PASS" start="2025-02-26T16:50:45.750137" elapsed="0.021764"/>
 </kw>
 <kw name="Wait Until Element Is Enabled" owner="SeleniumLibrary">
 <arg>${locator}</arg>
 <arg>timeout=5s</arg>
 <doc>Waits until the element ``locator`` is enabled.</doc>
-<status status="PASS" start="2025-02-26T16:33:27.804087" elapsed="0.033043"/>
+<status status="PASS" start="2025-02-26T16:50:45.772178" elapsed="0.020138"/>
 </kw>
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2025-02-26T16:33:27.837864" level="INFO">Clicking element 'xpath=//input[@name="password"]'.</msg>
+<msg time="2025-02-26T16:50:45.792837" level="INFO">Clicking element 'xpath=//input[@name="password"]'.</msg>
 <arg>${locator}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2025-02-26T16:33:27.837423" elapsed="0.099325"/>
+<status status="PASS" start="2025-02-26T16:50:45.792570" elapsed="0.064803"/>
 </kw>
 <arg>xpath=//input[@name="password"]</arg>
-<status status="PASS" start="2025-02-26T16:33:27.782325" elapsed="0.154604"/>
+<status status="PASS" start="2025-02-26T16:50:45.749864" elapsed="0.107627"/>
 </kw>
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2025-02-26T16:33:27.937516" level="INFO">Typing text '123456' into text field 'xpath=//input[@name="password"]'.</msg>
+<msg time="2025-02-26T16:50:45.857886" level="INFO">Typing text '12345678' into text field 'xpath=//input[@name="password"]'.</msg>
 <arg>xpath=//input[@name="password"]</arg>
 <arg>${password}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2025-02-26T16:33:27.937156" elapsed="0.059982"/>
+<status status="PASS" start="2025-02-26T16:50:45.857637" elapsed="0.054682"/>
 </kw>
 <arg>${valid_password}</arg>
-<status status="PASS" start="2025-02-26T16:33:27.781728" elapsed="0.215528"/>
+<status status="PASS" start="2025-02-26T16:50:45.749473" elapsed="0.163181"/>
 </kw>
 <kw name="Click Login Button">
 <kw name="Wait until element is ready then click element" owner="CommonKeywords">
@@ -144,233 +144,73 @@
 <arg>${locator}</arg>
 <arg>timeout=10s</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" start="2025-02-26T16:33:27.998105" elapsed="0.016632"/>
+<status status="PASS" start="2025-02-26T16:50:45.914324" elapsed="0.021132"/>
 </kw>
 <kw name="Wait Until Element Is Enabled" owner="SeleniumLibrary">
 <arg>${locator}</arg>
 <arg>timeout=5s</arg>
 <doc>Waits until the element ``locator`` is enabled.</doc>
-<status status="PASS" start="2025-02-26T16:33:28.014924" elapsed="0.026802"/>
+<status status="PASS" start="2025-02-26T16:50:45.935739" elapsed="0.020935"/>
 </kw>
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2025-02-26T16:33:28.042135" level="INFO">Clicking element 'xpath=//button[contains(text(), "เข้าสู่ระบบ")]'.</msg>
+<msg time="2025-02-26T16:50:45.957108" level="INFO">Clicking element 'xpath=//button[contains(text(), "เข้าสู่ระบบ")]'.</msg>
 <arg>${locator}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2025-02-26T16:33:28.041906" elapsed="0.077748"/>
+<status status="PASS" start="2025-02-26T16:50:45.956869" elapsed="0.087495"/>
 </kw>
 <arg>xpath=//button[contains(text(), "เข้าสู่ระบบ")]</arg>
-<status status="PASS" start="2025-02-26T16:33:27.997822" elapsed="0.122019"/>
+<status status="PASS" start="2025-02-26T16:50:45.913918" elapsed="0.130605"/>
 </kw>
-<status status="PASS" start="2025-02-26T16:33:27.997498" elapsed="0.122652"/>
+<status status="PASS" start="2025-02-26T16:50:45.913000" elapsed="0.131817"/>
 </kw>
-<kw name="Verify Login Success">
-<kw name="Wait until page contains element then verify text" owner="CommonKeywords">
-<kw name="Wait Until Page Contains" owner="SeleniumLibrary">
-<msg time="2025-02-26T16:33:31.214292" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: Message: no such window: target window already closed
-from unknown error: web view not found
-  (Session info: chrome=133.0.6943.142)
-Stacktrace:
-0   chromedriver                        0x0000000107b4a708 chromedriver + 5969672
-1   chromedriver                        0x0000000107b4232a chromedriver + 5935914
-2   chromedriver                        0x00000001075fe650 chromedriver + 415312
-3   chromedriver                        0x00000001075d24b5 chromedriver + 234677
-4   chromedriver                        0x000000010767e6fe chromedriver + 939774
-5   chromedriver                        0x000000010769ce85 chromedriver + 1064581
-6   chromedriver                        0x0000000107675f43 chromedriver + 905027
-7   chromedriver                        0x0000000107641cea chromedriver + 691434
-8   chromedriver                        0x0000000107642e41 chromedriver + 695873
-9   chromedriver                        0x0000000107b0d910 chromedriver + 5720336
-10  chromedriver                        0x0000000107b11850 chromedriver + 5736528
-11  chromedriver                        0x0000000107aeec07 chromedriver + 5594119
-12  chromedriver                        0x0000000107b122fb chromedriver + 5739259
-13  chromedriver                        0x0000000107add484 chromedriver + 5522564
-14  chromedriver                        0x0000000107b301d8 chromedriver + 5861848
-15  chromedriver                        0x0000000107b3039f chromedriver + 5862303
-16  chromedriver                        0x0000000107b41f08 chromedriver + 5934856
-17  libsystem_pthread.dylib             0x00007ff81ac0b18b _pthread_start + 99
-18  libsystem_pthread.dylib             0x00007ff81ac06ae3 thread_start + 15
-</msg>
-<msg time="2025-02-26T16:33:31.214981" level="FAIL">NoSuchWindowException: Message: no such window: target window already closed
-from unknown error: web view not found
-  (Session info: chrome=133.0.6943.142)
-Stacktrace:
-0   chromedriver                        0x0000000107b4a708 chromedriver + 5969672
-1   chromedriver                        0x0000000107b4232a chromedriver + 5935914
-2   chromedriver                        0x00000001075fe650 chromedriver + 415312
-3   chromedriver                        0x00000001075d24b5 chromedriver + 234677
-4   chromedriver                        0x000000010767e6fe chromedriver + 939774
-5   chromedriver                        0x000000010769ce85 chromedriver + 1064581
-6   chromedriver                        0x0000000107675f43 chromedriver + 905027
-7   chromedriver                        0x0000000107641cea chromedriver + 691434
-8   chromedriver                        0x0000000107642e41 chromedriver + 695873
-9   chromedriver                        0x0000000107b0d910 chromedriver + 5720336
-10  chromedriver                        0x0000000107b11850 chromedriver + 5736528
-11  chromedriver                        0x0000000107aeec07 chromedriver + 5594119
-12  chromedriver                        0x0000000107b122fb chromedriver + 5739259
-13  chromedriver                        0x0000000107add484 chromedriver + 5522564
-14  chromedriver                        0x0000000107b301d8 chromedriver + 5861848
-15  chromedriver                        0x0000000107b3039f chromedriver + 5862303
-16  chromedriver                        0x0000000107b41f08 chromedriver + 5934856
-17  libsystem_pthread.dylib             0x00007ff81ac0b18b _pthread_start + 99
-18  libsystem_pthread.dylib             0x00007ff81ac06ae3 thread_start + 15
-</msg>
-<arg>${expected_text}</arg>
-<arg>timeout=10s</arg>
-<doc>Waits until ``text`` appears on the current page.</doc>
-<status status="FAIL" start="2025-02-26T16:33:28.121438" elapsed="3.105156">NoSuchWindowException: Message: no such window: target window already closed
-from unknown error: web view not found
-  (Session info: chrome=133.0.6943.142)
-Stacktrace:
-0   chromedriver                        0x0000000107b4a708 chromedriver + 5969672
-1   chromedriver                        0x0000000107b4232a chromedriver + 5935914
-2   chromedriver                        0x00000001075fe650 chromedriver + 415312
-3   chromedriver                        0x00000001075d24b5 chromedriver + 234677
-4   chromedriver                        0x000000010767e6fe chromedriver + 939774
-5   chromedriver                        0x000000010769ce85 chromedriver + 1064581
-6   chromedriver                        0x0000000107675f43 chromedriver + 905027
-7   chromedriver                        0x0000000107641cea chromedriver + 691434
-8   chromedriver                        0x0000000107642e41 chromedriver + 695873
-9   chromedriver                        0x0000000107b0d910 chromedriver + 5720336
-10  chromedriver                        0x0000000107b11850 chromedriver + 5736528
-11  chromedriver                        0x0000000107aeec07 chromedriver + 5594119
-12  chromedriver                        0x0000000107b122fb chromedriver + 5739259
-13  chromedriver                        0x0000000107add484 chromedriver + 5522564
-14  chromedriver                        0x0000000107b301d8 chromedriver + 5861848
-15  chromedriver                        0x0000000107b3039f chromedriver + 5862303
-16  chromedriver                        0x0000000107b41f08 chromedriver + 5934856
-17  libsystem_pthread.dylib             0x00007ff81ac0b18b _pthread_start + 99
-18  libsystem_pthread.dylib             0x00007ff81ac06ae3 thread_start + 15
-</status>
+<kw name="Check If Login Failed">
+<kw name="Run Keyword And Return Status" owner="BuiltIn">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>xpath=//p[contains(@class, "text-redFS-300") and contains(text(), "กรอกรหัสผ่านไม่ถูกต้อง")]</arg>
+<arg>timeout=5s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-02-26T16:50:46.046764" elapsed="0.866990"/>
 </kw>
-<kw name="Get Text" owner="SeleniumLibrary">
-<var>${actual_text}</var>
-<arg>xpath=//*[contains(text(), "${expected_text}")]</arg>
-<doc>Returns the text value of the element identified by ``locator``.</doc>
-<status status="NOT RUN" start="2025-02-26T16:33:31.227157" elapsed="0.000064"/>
+<msg time="2025-02-26T16:50:46.913945" level="INFO">${login_failed} = True</msg>
+<var>${login_failed}</var>
+<arg>Wait Until Element Is Visible</arg>
+<arg>xpath=//p[contains(@class, "text-redFS-300") and contains(text(), "กรอกรหัสผ่านไม่ถูกต้อง")]</arg>
+<arg>timeout=5s</arg>
+<doc>Runs the given keyword with given arguments and returns the status as a Boolean value.</doc>
+<status status="PASS" start="2025-02-26T16:50:46.046008" elapsed="0.867978"/>
 </kw>
-<kw name="Should Be Equal As Strings" owner="BuiltIn">
-<arg>${actual_text}</arg>
-<arg>${expected_text}</arg>
-<doc>Fails if objects are unequal after converting them to strings.</doc>
-<status status="NOT RUN" start="2025-02-26T16:33:31.227554" elapsed="0.000059"/>
+<kw name="Run Keyword If" owner="BuiltIn">
+<kw name="Return From Keyword" owner="BuiltIn">
+<msg time="2025-02-26T16:50:46.914537" level="INFO">Returning from the enclosing user keyword.</msg>
+<doc>Returns from the enclosing user keyword.</doc>
+<status status="PASS" start="2025-02-26T16:50:46.914430" elapsed="0.000247"/>
 </kw>
-<arg>สวัสดี คุณ Test</arg>
-<status status="FAIL" start="2025-02-26T16:33:28.121151" elapsed="3.106800">NoSuchWindowException: Message: no such window: target window already closed
-from unknown error: web view not found
-  (Session info: chrome=133.0.6943.142)
-Stacktrace:
-0   chromedriver                        0x0000000107b4a708 chromedriver + 5969672
-1   chromedriver                        0x0000000107b4232a chromedriver + 5935914
-2   chromedriver                        0x00000001075fe650 chromedriver + 415312
-3   chromedriver                        0x00000001075d24b5 chromedriver + 234677
-4   chromedriver                        0x000000010767e6fe chromedriver + 939774
-5   chromedriver                        0x000000010769ce85 chromedriver + 1064581
-6   chromedriver                        0x0000000107675f43 chromedriver + 905027
-7   chromedriver                        0x0000000107641cea chromedriver + 691434
-8   chromedriver                        0x0000000107642e41 chromedriver + 695873
-9   chromedriver                        0x0000000107b0d910 chromedriver + 5720336
-10  chromedriver                        0x0000000107b11850 chromedriver + 5736528
-11  chromedriver                        0x0000000107aeec07 chromedriver + 5594119
-12  chromedriver                        0x0000000107b122fb chromedriver + 5739259
-13  chromedriver                        0x0000000107add484 chromedriver + 5522564
-14  chromedriver                        0x0000000107b301d8 chromedriver + 5861848
-15  chromedriver                        0x0000000107b3039f chromedriver + 5862303
-16  chromedriver                        0x0000000107b41f08 chromedriver + 5934856
-17  libsystem_pthread.dylib             0x00007ff81ac0b18b _pthread_start + 99
-18  libsystem_pthread.dylib             0x00007ff81ac06ae3 thread_start + 15
-</status>
+<arg>${login_failed}</arg>
+<arg>Return From Keyword</arg>
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<status status="PASS" start="2025-02-26T16:50:46.914165" elapsed="0.000623"/>
 </kw>
-<status status="FAIL" start="2025-02-26T16:33:28.120625" elapsed="3.107650">NoSuchWindowException: Message: no such window: target window already closed
-from unknown error: web view not found
-  (Session info: chrome=133.0.6943.142)
-Stacktrace:
-0   chromedriver                        0x0000000107b4a708 chromedriver + 5969672
-1   chromedriver                        0x0000000107b4232a chromedriver + 5935914
-2   chromedriver                        0x00000001075fe650 chromedriver + 415312
-3   chromedriver                        0x00000001075d24b5 chromedriver + 234677
-4   chromedriver                        0x000000010767e6fe chromedriver + 939774
-5   chromedriver                        0x000000010769ce85 chromedriver + 1064581
-6   chromedriver                        0x0000000107675f43 chromedriver + 905027
-7   chromedriver                        0x0000000107641cea chromedriver + 691434
-8   chromedriver                        0x0000000107642e41 chromedriver + 695873
-9   chromedriver                        0x0000000107b0d910 chromedriver + 5720336
-10  chromedriver                        0x0000000107b11850 chromedriver + 5736528
-11  chromedriver                        0x0000000107aeec07 chromedriver + 5594119
-12  chromedriver                        0x0000000107b122fb chromedriver + 5739259
-13  chromedriver                        0x0000000107add484 chromedriver + 5522564
-14  chromedriver                        0x0000000107b301d8 chromedriver + 5861848
-15  chromedriver                        0x0000000107b3039f chromedriver + 5862303
-16  chromedriver                        0x0000000107b41f08 chromedriver + 5934856
-17  libsystem_pthread.dylib             0x00007ff81ac0b18b _pthread_start + 99
-18  libsystem_pthread.dylib             0x00007ff81ac06ae3 thread_start + 15
-</status>
+<status status="PASS" start="2025-02-26T16:50:46.045303" elapsed="0.869691"/>
 </kw>
 <doc>ทดสอบการล็อกอินด้วยข้อมูลที่ถูกต้อง</doc>
-<status status="FAIL" start="2025-02-26T16:33:24.281137" elapsed="6.947467">NoSuchWindowException: Message: no such window: target window already closed
-from unknown error: web view not found
-  (Session info: chrome=133.0.6943.142)
-Stacktrace:
-0   chromedriver                        0x0000000107b4a708 chromedriver + 5969672
-1   chromedriver                        0x0000000107b4232a chromedriver + 5935914
-2   chromedriver                        0x00000001075fe650 chromedriver + 415312
-3   chromedriver                        0x00000001075d24b5 chromedriver + 234677
-4   chromedriver                        0x000000010767e6fe chromedriver + 939774
-5   chromedriver                        0x000000010769ce85 chromedriver + 1064581
-6   chromedriver                        0x0000000107675f43 chromedriver + 905027
-7   chromedriver                        0x0000000107641cea chromedriver + 691434
-8   chromedriver                        0x0000000107642e41 chromedriver + 695873
-9   chromedriver                        0x0000000107b0d910 chromedriver + 5720336
-10  chromedriver                        0x0000000107b11850 chromedriver + 5736528
-11  chromedriver                        0x0000000107aeec07 chromedriver + 5594119
-12  chromedriver                        0x0000000107b122fb chromedriver + 5739259
-13  chromedriver                        0x0000000107add484 chromedriver + 5522564
-14  chromedriver                        0x0000000107b301d8 chromedriver + 5861848
-15  chromedriver                        0x0000000107b3039f chromedriver + 5862303
-16  chromedriver                        0x0000000107b41f08 chromedriver + 5934856
-17  libsystem_pthread.dylib             0x00007ff81ac0b18b _pthread_start + 99
-18  libsystem_pthread.dylib             0x00007ff81ac06ae3 thread_start + 15
-</status>
+<status status="PASS" start="2025-02-26T16:50:42.452401" elapsed="4.462835"/>
 </test>
 <kw name="Close Browser" owner="SeleniumLibrary" type="TEARDOWN">
 <doc>Closes the current browser.</doc>
-<status status="PASS" start="2025-02-26T16:33:31.229485" elapsed="0.245424"/>
+<status status="PASS" start="2025-02-26T16:50:46.915972" elapsed="0.284234"/>
 </kw>
-<status status="FAIL" start="2025-02-26T16:33:20.928254" elapsed="10.546878"/>
+<status status="PASS" start="2025-02-26T16:50:40.236631" elapsed="6.963671"/>
 </suite>
 <statistics>
 <total>
-<stat pass="0" fail="1" skip="0">All Tests</stat>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
 </total>
 <tag>
 </tag>
 <suite>
-<stat name="LoginTestcase" id="s1" pass="0" fail="1" skip="0">LoginTestcase</stat>
+<stat name="LoginTestcase" id="s1" pass="1" fail="0" skip="0">LoginTestcase</stat>
 </suite>
 </statistics>
 <errors>
-<msg time="2025-02-26T16:33:31.214292" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: Message: no such window: target window already closed
-from unknown error: web view not found
-  (Session info: chrome=133.0.6943.142)
-Stacktrace:
-0   chromedriver                        0x0000000107b4a708 chromedriver + 5969672
-1   chromedriver                        0x0000000107b4232a chromedriver + 5935914
-2   chromedriver                        0x00000001075fe650 chromedriver + 415312
-3   chromedriver                        0x00000001075d24b5 chromedriver + 234677
-4   chromedriver                        0x000000010767e6fe chromedriver + 939774
-5   chromedriver                        0x000000010769ce85 chromedriver + 1064581
-6   chromedriver                        0x0000000107675f43 chromedriver + 905027
-7   chromedriver                        0x0000000107641cea chromedriver + 691434
-8   chromedriver                        0x0000000107642e41 chromedriver + 695873
-9   chromedriver                        0x0000000107b0d910 chromedriver + 5720336
-10  chromedriver                        0x0000000107b11850 chromedriver + 5736528
-11  chromedriver                        0x0000000107aeec07 chromedriver + 5594119
-12  chromedriver                        0x0000000107b122fb chromedriver + 5739259
-13  chromedriver                        0x0000000107add484 chromedriver + 5522564
-14  chromedriver                        0x0000000107b301d8 chromedriver + 5861848
-15  chromedriver                        0x0000000107b3039f chromedriver + 5862303
-16  chromedriver                        0x0000000107b41f08 chromedriver + 5934856
-17  libsystem_pthread.dylib             0x00007ff81ac0b18b _pthread_start + 99
-18  libsystem_pthread.dylib             0x00007ff81ac06ae3 thread_start + 15
-</msg>
 </errors>
 </robot>
