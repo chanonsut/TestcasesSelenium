@@ -1,24 +1,203 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.2.2 (Python 3.12.0 on darwin)" generated="2025-02-26T15:47:00.826105" rpa="false" schemaversion="5">
+<robot generator="Robot 7.2.2 (Python 3.12.0 on darwin)" generated="2025-02-26T16:21:53.844415" rpa="false" schemaversion="5">
 <suite id="s1" name="LoginTestcase" source="/Users/chanon_suttana/Documents/GitHub/TestcasesSelenium/LoginTestcase.robot">
 <kw name="Open Browser" owner="SeleniumLibrary" type="SETUP">
-<msg time="2025-02-26T15:47:01.148648" level="FAIL">Variable '${baseurl}' not found.</msg>
+<msg time="2025-02-26T16:21:54.003751" level="INFO">Opening browser 'chrome' to base url 'https://futureskill.co/'.</msg>
 <arg>${baseurl}</arg>
 <arg>chrome</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<status status="FAIL" start="2025-02-26T15:47:01.148061" elapsed="0.000658">Variable '${baseurl}' not found.</status>
+<status status="PASS" start="2025-02-26T16:21:54.003485" elapsed="2.067863"/>
 </kw>
-<test id="s1-t1" name="As a user, I want to login success with valid credentials" line="11">
+<test id="s1-t1" name="As a user, I want to login success with valid credentials" line="14">
+<kw name="Setup With Initial Login Button">
+<kw name="Log To Console" owner="BuiltIn">
+<arg>ปุ่มเมนูมองเห็นแล้ว</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-02-26T16:21:56.075866" elapsed="0.000352"/>
+</kw>
+<kw name="Wait until element is ready then click element" owner="CommonKeywords">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${locator}</arg>
+<arg>timeout=10s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-02-26T16:21:56.077158" elapsed="0.906346"/>
+</kw>
+<kw name="Wait Until Element Is Enabled" owner="SeleniumLibrary">
+<arg>${locator}</arg>
+<arg>timeout=5s</arg>
+<doc>Waits until the element ``locator`` is enabled.</doc>
+<status status="PASS" start="2025-02-26T16:21:56.985127" elapsed="1.019171"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-02-26T16:21:58.004761" level="INFO">Clicking element 'xpath=//button[@id="react-burger-menu-btn"]'.</msg>
+<arg>${locator}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-02-26T16:21:58.004504" elapsed="0.109553"/>
+</kw>
+<arg>xpath=//button[@id="react-burger-menu-btn"]</arg>
+<status status="PASS" start="2025-02-26T16:21:56.076592" elapsed="2.037668"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>กดปุ่มเมนูเรียบร้อย</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-02-26T16:21:58.114529" elapsed="0.000279"/>
+</kw>
+<kw name="Wait until element is ready then click element" owner="CommonKeywords">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${locator}</arg>
+<arg>timeout=10s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-02-26T16:21:58.115482" elapsed="0.467838"/>
+</kw>
+<kw name="Wait Until Element Is Enabled" owner="SeleniumLibrary">
+<arg>${locator}</arg>
+<arg>timeout=5s</arg>
+<doc>Waits until the element ``locator`` is enabled.</doc>
+<status status="PASS" start="2025-02-26T16:21:58.583638" elapsed="0.025385"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-02-26T16:21:58.609520" level="INFO">Clicking element 'xpath=//button[contains(@class, "w-fit") and contains(text(), "เข้าสู่ระบบ")]'.</msg>
+<arg>${locator}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-02-26T16:21:58.609219" elapsed="1.348051"/>
+</kw>
+<arg>xpath=//button[contains(@class, "w-fit") and contains(text(), "เข้าสู่ระบบ")]</arg>
+<status status="PASS" start="2025-02-26T16:21:58.115021" elapsed="1.842542"/>
+</kw>
+<kw name="Wait Until Page Contains" owner="SeleniumLibrary">
+<arg>เข้าสู่ระบบ</arg>
+<arg>timeout=10s</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" start="2025-02-26T16:21:59.957930" elapsed="0.084520"/>
+</kw>
+<status status="PASS" start="2025-02-26T16:21:56.075060" elapsed="3.967518"/>
+</kw>
+<kw name="Input Username">
+<kw name="Wait until element is ready then click element" owner="CommonKeywords">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${locator}</arg>
+<arg>timeout=10s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-02-26T16:22:00.043957" elapsed="0.218862"/>
+</kw>
+<kw name="Wait Until Element Is Enabled" owner="SeleniumLibrary">
+<arg>${locator}</arg>
+<arg>timeout=5s</arg>
+<doc>Waits until the element ``locator`` is enabled.</doc>
+<status status="PASS" start="2025-02-26T16:22:00.263007" elapsed="0.018910"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-02-26T16:22:00.282369" level="INFO">Clicking element 'xpath=//input[@name="email"]'.</msg>
+<arg>${locator}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-02-26T16:22:00.282109" elapsed="0.151655"/>
+</kw>
+<arg>xpath=//input[@name="email"]</arg>
+<status status="PASS" start="2025-02-26T16:22:00.043535" elapsed="0.390557"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-02-26T16:22:00.435102" level="INFO">Typing text 'padcenter@prachakij.com' into text field 'xpath=//input[@name="email"]'.</msg>
+<arg>xpath=//input[@name="email"]</arg>
+<arg>${username}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-02-26T16:22:00.434390" elapsed="0.188353"/>
+</kw>
+<arg>${email}</arg>
+<status status="PASS" start="2025-02-26T16:22:00.042878" elapsed="0.579982"/>
+</kw>
+<kw name="Input Password">
+<kw name="Wait until element is ready then click element" owner="CommonKeywords">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${locator}</arg>
+<arg>timeout=10s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-02-26T16:22:00.623723" elapsed="0.018568"/>
+</kw>
+<kw name="Wait Until Element Is Enabled" owner="SeleniumLibrary">
+<arg>${locator}</arg>
+<arg>timeout=5s</arg>
+<doc>Waits until the element ``locator`` is enabled.</doc>
+<status status="PASS" start="2025-02-26T16:22:00.642481" elapsed="0.016358"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-02-26T16:22:00.659252" level="INFO">Clicking element 'xpath=//input[@name="password"]'.</msg>
+<arg>${locator}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-02-26T16:22:00.659021" elapsed="0.060606"/>
+</kw>
+<arg>xpath=//input[@name="password"]</arg>
+<status status="PASS" start="2025-02-26T16:22:00.623467" elapsed="0.096277"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-02-26T16:22:00.720164" level="INFO">Typing text '123456' into text field 'xpath=//input[@name="password"]'.</msg>
+<arg>xpath=//input[@name="password"]</arg>
+<arg>${password}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-02-26T16:22:00.719911" elapsed="0.047137"/>
+</kw>
+<arg>${valid_password}</arg>
+<status status="PASS" start="2025-02-26T16:22:00.623095" elapsed="0.144081"/>
+</kw>
+<kw name="Click Login Button">
+<kw name="Wait until element is ready then click element" owner="CommonKeywords">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${locator}</arg>
+<arg>timeout=10s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-02-26T16:22:00.767947" elapsed="0.015131"/>
+</kw>
+<kw name="Wait Until Element Is Enabled" owner="SeleniumLibrary">
+<arg>${locator}</arg>
+<arg>timeout=5s</arg>
+<doc>Waits until the element ``locator`` is enabled.</doc>
+<status status="PASS" start="2025-02-26T16:22:00.783329" elapsed="0.014851"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-02-26T16:22:00.798593" level="INFO">Clicking element 'xpath=//button[contains(text(), "เข้าสู่ระบบ")]'.</msg>
+<arg>${locator}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-02-26T16:22:00.798361" elapsed="0.068667"/>
+</kw>
+<arg>xpath=//button[contains(text(), "เข้าสู่ระบบ")]</arg>
+<status status="PASS" start="2025-02-26T16:22:00.767700" elapsed="0.099506"/>
+</kw>
+<status status="PASS" start="2025-02-26T16:22:00.767403" elapsed="0.100144"/>
+</kw>
+<kw name="Verify Login Success">
+<kw name="Wait until page contains element then verify text" owner="CommonKeywords">
+<kw name="Wait Until Page Contains" owner="SeleniumLibrary">
+<msg time="2025-02-26T16:22:11.134072" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-16.png"&gt;&lt;img src="selenium-screenshot-16.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2025-02-26T16:22:11.134281" level="FAIL">Text 'สวัสดี คุณ Test' did not appear in 10 seconds.</msg>
+<arg>${expected_text}</arg>
+<arg>timeout=10s</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="FAIL" start="2025-02-26T16:22:00.868703" elapsed="10.266914">Text 'สวัสดี คุณ Test' did not appear in 10 seconds.</status>
+</kw>
+<kw name="Get Text" owner="SeleniumLibrary">
+<var>${actual_text}</var>
+<arg>xpath=//*[contains(text(), "${expected_text}")]</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<status status="NOT RUN" start="2025-02-26T16:22:11.136030" elapsed="0.000055"/>
+</kw>
+<kw name="Should Be Equal As Strings" owner="BuiltIn">
+<arg>${actual_text}</arg>
+<arg>${expected_text}</arg>
+<doc>Fails if objects are unequal after converting them to strings.</doc>
+<status status="NOT RUN" start="2025-02-26T16:22:11.136300" elapsed="0.000071"/>
+</kw>
+<arg>สวัสดี คุณ Test</arg>
+<status status="FAIL" start="2025-02-26T16:22:00.868354" elapsed="10.268273">Text 'สวัสดี คุณ Test' did not appear in 10 seconds.</status>
+</kw>
+<status status="FAIL" start="2025-02-26T16:22:00.867918" elapsed="10.268967">Text 'สวัสดี คุณ Test' did not appear in 10 seconds.</status>
+</kw>
 <doc>ทดสอบการล็อกอินด้วยข้อมูลที่ถูกต้อง</doc>
-<status status="FAIL" start="2025-02-26T15:47:01.148902" elapsed="0.000927">Parent suite setup failed:
-Variable '${baseurl}' not found.</status>
+<status status="FAIL" start="2025-02-26T16:21:56.072097" elapsed="15.065144">Text 'สวัสดี คุณ Test' did not appear in 10 seconds.</status>
 </test>
 <kw name="Close Browser" owner="SeleniumLibrary" type="TEARDOWN">
 <doc>Closes the current browser.</doc>
-<status status="PASS" start="2025-02-26T15:47:01.150439" elapsed="0.000187"/>
+<status status="PASS" start="2025-02-26T16:22:11.137886" elapsed="0.219092"/>
 </kw>
-<status status="FAIL" start="2025-02-26T15:47:00.827646" elapsed="0.323042">Suite setup failed:
-Variable '${baseurl}' not found.</status>
+<status status="FAIL" start="2025-02-26T16:21:53.845997" elapsed="17.511074"/>
 </suite>
 <statistics>
 <total>
@@ -31,7 +210,5 @@ Variable '${baseurl}' not found.</status>
 </suite>
 </statistics>
 <errors>
-<msg time="2025-02-26T15:47:01.145871" level="ERROR">Error in file '/Users/chanon_suttana/Documents/GitHub/TestcasesSelenium/LoginTestcase.robot' on line 5: Parsing JSON resource file '/Users/chanon_suttana/Documents/GitHub/TestcasesSelenium/resources/config/config.json' failed: Creating 'robot.running.ResourceFile' object from dictionary failed: 'robot.running.ResourceFile' object does not have attribute 'baseurl'</msg>
-<msg time="2025-02-26T15:47:01.146681" level="ERROR">Error in file '/Users/chanon_suttana/Documents/GitHub/TestcasesSelenium/LoginTestcase.robot' on line 6: Parsing JSON resource file '/Users/chanon_suttana/Documents/GitHub/TestcasesSelenium/resources/testdata/testdata.json' failed: Creating 'robot.running.ResourceFile' object from dictionary failed: 'robot.running.ResourceFile' object does not have attribute 'email'</msg>
 </errors>
 </robot>
